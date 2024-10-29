@@ -2,9 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/",
+      "src": "src/index.js",
       "use": "@vercel/node"
-    }
+    },
+    {
+      "src": "src/utils/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/app.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/middleware.js",
+      "use": "@vercel/node"
+    },
   ],
   "routes": [
     {
