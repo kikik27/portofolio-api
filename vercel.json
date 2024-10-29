@@ -2,23 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.js",
+      "src": "index.js",
       "use": "@vercel/node"
     },
     {
-      "src": "src/utils/**/*.js",
+      "src": "app.js",
       "use": "@vercel/node"
     },
     {
-      "src": "src/api/**/*.js",
+      "src": "api/**/*.js",
       "use": "@vercel/node"
     },
     {
-      "src": "src/app.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "src/middleware.js",
+      "src": "middlewares/**/*.js",
       "use": "@vercel/node"
     }
   ],
