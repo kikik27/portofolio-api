@@ -17,6 +17,10 @@ app.use(express.json());
 
 app.use('/api/', api);
 
+app.get('/', (req, res) => {
+  res.send('Portofolio API');
+});
+
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
 
